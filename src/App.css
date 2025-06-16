@@ -221,13 +221,14 @@ html {
 }
 
 body {
-  color: #333;
-  background-color: #fff;
-  min-height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  background-color: var(--color--backgroung);
+  font-family: var(--font--satoshi);
+  color: var(--color--font);
+  font-size: var(--text-size--regular);
+  cursor: default;
+  line-height: 1.5;
+  text-decoration: none;
+  padding-top: 5rem; /* Ensure content starts below fixed header */
 }
 
 img {
@@ -2103,16 +2104,6 @@ textarea.w-input, textarea.w-select {
   .w-layout-blockcontainer {
     max-width: none;
   }
-}
-
-body {
-  background-color: var(--color--backgroung);
-  font-family: var(--font--satoshi);
-  color: var(--color--font);
-  font-size: var(--text-size--regular);
-  cursor: default;
-  line-height: 1.5;
-  text-decoration: none;
 }
 
 h1 {

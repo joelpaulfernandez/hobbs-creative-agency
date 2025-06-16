@@ -11,7 +11,6 @@ body {
 
 .app-container {
   overflow-x: hidden; /* Prevent horizontal scroll from animations */
-  padding-top: 80px; /* Adjust this value based on your header's actual height */
 }
 
 .container {
@@ -57,8 +56,6 @@ p {
   background: linear-gradient(to bottom right, #000000, #1a1a1a);
   color: #ffffff;
   text-align: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
 }
 
 .hero-section.fade-in {

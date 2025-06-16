@@ -3,14 +3,6 @@ import './App.css';
 import Header from './components/Header';
 
 const App: React.FC = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (heroRef.current) {
-      heroRef.current.classList.add('fade-in');
-    }
-  }, []);
-
   return (
     <div className="App">
       <Header />
