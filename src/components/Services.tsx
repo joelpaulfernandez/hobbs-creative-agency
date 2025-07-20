@@ -1,123 +1,125 @@
 import React from 'react';
 import './Services.css';
 
-const placeholder = '/logo192.png'; // Use existing public image as placeholder
+const placeholder = '/logo192.png';
 
 const Services: React.FC = () => (
-  <div className="services-modern-page">
-    <header className="services-hero">
-      <div className="services-hero-content">
-        <h1>Services</h1>
-        <p>Learn more about our full suite of creative services designed to elevate your brand and connect with your audience.</p>
-        <a href="#contact" className="btn-primary">Contact Us</a>
+  <div>
+    {/* Hero Section */}
+    <div className="services-hero-minimal">
+      <div className="services-hero-minimal-content">
+        <h1>Where Creativity Meets Purpose</h1>
+        <p>At Hobbs Creative Space, we bring your vision to life through innovative design, compelling storytelling, and bold branding. From concept to execution, we offer a full suite of creative services designed to elevate your brand and connect with your audience.</p>
+        <a href="#contact" className="btn-outline">Contact Us</a>
       </div>
-    </header>
+    </div>
 
-    <section className="services-section">
-      <h2>Branding</h2>
-      <div className="services-grid">
-        <div className="service-card">
-          <img src={placeholder} alt="Branding" />
-          <div className="service-card-content">
-            <h3>Branding & Design</h3>
-            <p>Crafting brand identities that speak louder than words.</p>
-            <ul>
-              <li>Logo Design</li>
-              <li>Brand Kits</li>
-              <li>Corporate Stationery</li>
-              <li>Packaging Design</li>
-              <li>Visual Identity Systems</li>
-            </ul>
-            <a href="#contact" className="btn-secondary">Contact Us</a>
-          </div>
+    {/* Branding & Design Section */}
+    <section className="service-section">
+      <h2>Branding & Design</h2>
+      <div className="service-row">
+        <img src={placeholder} alt="Branding & Design" className="service-img-large" />
+        <div className="service-info">
+          <p>Crafting brand identities that speak louder than words.</p>
+          <ul>
+            <li>Logo Design</li>
+            <li>Brand Kits (Colors, Typography, Guidelines)</li>
+            <li>Corporate Stationery</li>
+            <li>Packaging Design</li>
+            <li>Visual Identity Systems</li>
+          </ul>
+          <a href="#contact" className="btn-outline">Contact Us</a>
         </div>
       </div>
     </section>
 
-    <section className="services-section">
+    {/* Photography Section */}
+    <section className="service-section">
       <h2>Photography</h2>
-      <div className="services-grid">
-        <div className="service-card">
-          <img src={placeholder} alt="Photography" />
-          <div className="service-card-content">
-            <h3>Photography</h3>
-            <p>Telling your brand story frame by frame.</p>
-            <ul>
-              <li>Product Photography</li>
-              <li>Lifestyle & Fashion Shoots</li>
-              <li>Food Photography</li>
-              <li>Corporate Portraits</li>
-              <li>Event Coverage</li>
-            </ul>
-            <a href="#contact" className="btn-secondary">Contact Us</a>
-          </div>
+      <div className="service-row reverse">
+        <img src={placeholder} alt="Photography" className="service-img-large" />
+        <div className="service-info">
+          <p>Telling your brand story frame by frame.</p>
+          <ul>
+            <li>Product Photography</li>
+            <li>Lifestyle & Fashion Shoots</li>
+            <li>Food Photography</li>
+            <li>Corporate Portraits</li>
+            <li>Event Coverage</li>
+          </ul>
+          <a href="#contact" className="btn-outline">Contact Us</a>
         </div>
       </div>
     </section>
 
-    <section className="services-section">
+    {/* Videography Section */}
+    <section className="service-section">
       <h2>Videography</h2>
-      <div className="services-grid">
-        <div className="service-card">
-          <img src={placeholder} alt="Videography" />
-          <div className="service-card-content">
-            <h3>Videography</h3>
-            <p>Cinematic visuals that make an impact.</p>
-            <ul>
-              <li>Brand Films</li>
-              <li>Product Videos</li>
-              <li>Event Videography</li>
-              <li>Social Media Reels</li>
-              <li>Highlight & Promotional Videos</li>
-            </ul>
-            <a href="#contact" className="btn-secondary">Contact Us</a>
-          </div>
+      <div className="service-row">
+        <img src={placeholder} alt="Videography" className="service-img-large" />
+        <div className="service-info">
+          <p>Cinematic visuals that make an impact.</p>
+          <ul>
+            <li>Brand Films</li>
+            <li>Product Videos</li>
+            <li>Event Videography</li>
+            <li>Social Media Reels</li>
+            <li>Highlight & Promotional Videos</li>
+          </ul>
+          <a href="#contact" className="btn-outline">Contact Us</a>
         </div>
       </div>
     </section>
 
-    <section className="services-section">
+    {/* Social Media Content Section */}
+    <section className="service-section">
       <h2>Social Media Content</h2>
-      <div className="services-grid">
-        <div className="service-card">
-          <img src={placeholder} alt="Social Media Content" />
-          <div className="service-card-content">
-            <h3>Social Media Content</h3>
-            <p>Strategic content that drives engagement and builds community.</p>
-            <ul>
-              <li>Content Planning</li>
-              <li>Static Posts & Reels</li>
-              <li>Motion Graphics</li>
-              <li>Copywriting & Captions</li>
-              <li>Monthly Content Calendars</li>
-            </ul>
-            <a href="#contact" className="btn-secondary">Contact Us</a>
-          </div>
+      <div className="service-row reverse">
+        <img src={placeholder} alt="Social Media Content" className="service-img-large" />
+        <div className="service-info">
+          <p>Strategic content that drives engagement and builds community.</p>
+          <ul>
+            <li>Content Planning</li>
+            <li>Static Posts & Reels</li>
+            <li>Motion Graphics</li>
+            <li>Copywriting & Captions</li>
+            <li>Monthly Content Calendars</li>
+          </ul>
+          <a href="#contact" className="btn-outline">Contact Us</a>
         </div>
       </div>
     </section>
 
-    <section className="services-section">
+    {/* Digital Illustration & Motion Graphics Section */}
+    <section className="service-section">
       <h2>Digital Illustration & Motion Graphics</h2>
-      <div className="services-grid">
-        <div className="service-card">
-          <img src={placeholder} alt="Digital Illustration & Motion Graphics" />
-          <div className="service-card-content">
-            <h3>Digital Illustration & Motion Graphics</h3>
-            <p>Creative visuals that move people.</p>
-            <ul>
-              <li>Custom Illustrations</li>
-              <li>Explainer Videos</li>
-              <li>2D Animation</li>
-              <li>Logo Animation</li>
-              <li>Title & Text Effects</li>
-            </ul>
-            <a href="#contact" className="btn-secondary">Contact Us</a>
-          </div>
+      <div className="service-row">
+        <img src={placeholder} alt="Digital Illustration & Motion Graphics" className="service-img-large" />
+        <div className="service-info">
+          <p>Creative visuals that move people.</p>
+          <ul>
+            <li>Custom Illustrations</li>
+            <li>Explainer Videos</li>
+            <li>2D Animation</li>
+            <li>Logo Animation</li>
+            <li>Title & Text Effects</li>
+          </ul>
+          <a href="#contact" className="btn-outline">Contact Us</a>
         </div>
       </div>
+    </section>
+
+    {/* Why Choose Hobbs Section */}
+    <section className="why-hobbs-section">
+      <h2>Why Choose Hobbs?</h2>
+      <ul>
+        <li>Creative Strategy-First Approach</li>
+        <li>Industry-Standard Equipment & Tools</li>
+        <li>Fast Turnaround & Clear Communication</li>
+        <li>Personalized Solutions Tailored to Your Brand</li>
+      </ul>
     </section>
   </div>
 );
 
-export default Services; 
+export default Services;
