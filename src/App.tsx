@@ -17,14 +17,15 @@ const App: React.FC = () => {
                   <div className="tag"><p className="text-weight-medium caps">we are hobbs</p></div>
                   <div className="elipse hide-mobile"></div>
                 </div>
-                <div className="heading"><h1 className="heading-1">Elevate your brand with creative solutions</h1></div>
+                <div className="heading"><h1 className="heading-1">From Branding to
+                Digital Creatives and beyond...</h1></div>
               </div>
             </div>
-            <div className="hero-interaction-wrapper">
+            {/*<div className="hero-interaction-wrapper">
               <div className="hero-card first"><img src="https://cdn.prod.website-files.com/66f594a3776bdc5c680392e2/66fa93b7010975c6564112ea_Images%20Hero%2001.jpg" loading="lazy" alt="Hero Image" className="image"/></div>
               <div className="hero-card second"><img src="https://cdn.prod.website-files.com/66f594a3776bdc5c680392e2/66fa93b709501e1825fa0891_Images%20Hero%2002.jpg" loading="lazy" alt="Hero Image" className="image"/></div>
               <div className="hero-card third"><img src="https://cdn.prod.website-files.com/66f594a3776bdc5c680392e2/66fa93b7c6d1a72c0dc53f3b_Images%20Hero%2003.jpg" loading="lazy" alt="Hero Image" className="image"/></div>
-            </div>
+            </div>*/}
             <div className="hero-component">
               <div className="hero-content">
                 <div className="hero-left-content">
@@ -66,10 +67,13 @@ const App: React.FC = () => {
           <div className="container">
             <div className="about-header">
               <p className="about-intro-text">we are hobbs</p>
-              <h2 className="about-main-heading">Elevate your digital presence with distinction, immerse in boundless creativity. Our team of designers and development trailblazers ignites your digital vision.</h2>
+              <h2 className="about-main-heading">Hobbs Creative Space is a full-service creative agency blending bold branding, graphic design,
+motion,digital illustration, and cinematic storytelling. Whether it's a powerful logo, a high-impact
+reel, or a beautifully captured brand shoot — we turn your vision into visual stories that resonate.
+Based in Dubai, we collaborate with local and global clients who value standout creativity.</h2>
             </div>
 
-            <div className="stats-grid">
+           {/* <div className="stats-grid">
               <div className="stat-item">
                 <h3>3+</h3>
                 <p>Years of experience</p>
@@ -82,23 +86,35 @@ const App: React.FC = () => {
                 <h3>100+</h3>
                 <p>Projects delivered</p>
               </div>
-            </div>
+            </div>*/}
 
-            <div className="services-overview">
-              <div className="service-item">
-                <span className="service-number">01</span>
-                <h3>Transform your business identity through expert branding strategies</h3>
-                <p>Elevate your brand's presence with tailored solutions that resonate with your brand</p>
+            <div className="services-overview-custom">
+              <div className="services-row top-row">
+                <div className="service-block">
+                  <h3><b>Branding & Identity</b></h3>
+                  <p>Logos, brand strategy, brand books — everything your business needs to look and feel powerful.</p>
+                </div>
+                <div className="vertical-divider"></div>
+                <div className="service-block">
+                  <h3><b>Graphic Design</b></h3>
+                  <p>Posters, brochures, flyers, packaging, ads, and digital illustrations that are as functional as they are beautiful.</p>
+                </div>
+                <div className="vertical-divider"></div>
+                <div className="service-block">
+                  <h3><b>Motion Graphics</b></h3>
+                  <p>Logo animations, title reveals, explainer videos, reels, social animations — adding movement to your message.</p>
+                </div>
               </div>
-              <div className="service-item">
-                <span className="service-number">02</span>
-                <h3>Unlock innovative web solutions with cutting-edge development</h3>
-                <p>Our team crafts seamless digital experiences to drive results and business growth</p>
-              </div>
-              <div className="service-item">
-                <span className="service-number">03</span>
-                <h3>Design intuitive user interfaces for exceptional user experiences</h3>
-                <p>We create user-centered designs that enhance engagement and usability</p>
+              <div className="services-row bottom-row">
+                <div className="service-block">
+                  <h3><b>Photography & Videography</b></h3>
+                  <p>From polished product shoots to cinematic brand videos, we bring your story to life frame by frame.</p>
+                </div>
+                <div className="vertical-divider"></div>
+                <div className="service-block">
+                  <h3><b>Social Media Designing & Content Creation</b></h3>
+                  <p>We turn your feeds into an experience.</p>
+                </div>
               </div>
             </div>
           </div>
